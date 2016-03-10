@@ -1,0 +1,252 @@
+<html>
+<head>
+  <link href="public/app.css" rel="stylesheet" />
+  <link href="vendors/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link href="vendors/font-awesome/css/font-awesome.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="content">
+
+    <h3>Boards</h3>
+
+    <div class="board width-5 height-5"></div><br/><br/>
+    <div class="board width-3 height-4"></div><br/><br/>
+
+    <p>Big board</p>
+    <div class="big board width-5 height-5"></div><br/><br/>
+
+    <p>Small board</p>
+    <div class="sm board width-5 height-5"></div><br/><br/>
+
+
+    <p>Problems: browser scale</p>
+
+    <h3>Elements</h3>
+
+    <h4>Icons</h4>
+
+    <div class="board width-5 height-5">
+      <span class="top-0 left-0"><i class="fa fa-circle"></i></span>
+      <span class="top-0 left-1"><i class="fa fa-circle-o"></i></span>
+      <span class="top-0 left-2"><i class="fa fa-dot-circle-o"></i></span>
+
+      <span class="top-1 left-0"><i class="fa fa-check-square"></i></span>
+      <span class="top-1 left-1"><i class="fa fa-check-square-o"></i></span>
+
+      <span class="top-2 left-0"><i class="fa fa-minus-square"></i></span>
+      <span class="top-2 left-1"><i class="fa fa-minus-square-o"></i></span>
+
+      <span class="top-3 left-0"><i class="fa fa-plus-square"></i></span>
+      <span class="top-3 left-1"><i class="fa fa-plus-square-o"></i></span>
+
+      <span class="top-4 left-0"><i class="fa fa-square"></i></span>
+      <span class="top-4 left-1"><i class="fa fa-square"></i></span>
+      <span class="top-4 left-2"><i class="fa fa-square-o"></i></span>
+    </div><br/><br/>
+
+
+    <p>Different colors</p>
+    <div class="board width-5 height-5">
+      <span class="top-2 left-0 red"><i class="fa fa-square"></i></span>
+      <span class="top-2 left-1 red"><i class="fa fa-square"></i></span>
+      <span class="top-2 left-2 green"><i class="fa fa-square"></i></span>
+    </div><br/><br/>
+
+
+    <p>Different opacity</p>
+    <div class="board width-5 height-5">
+      <span class="top-2 left-0 green opacity-20"><i class="fa fa-square"></i></span>
+      <span class="top-2 left-1 green opacity-50"><i class="fa fa-square"></i></span>
+      <span class="top-2 left-2 green"><i class="fa fa-square"></i></span>
+    </div><br/><br/>
+
+    <p>Different animations (click on circle)</p>
+
+    <div class="board width-5 height-5" data-step="25">
+      <span class="top-2 left-0 green opacity-20 worm"><i class="fa fa-square"></i></span>
+      <span class="top-2 left-1 green opacity-50 worm"><i class="fa fa-square"></i></span>
+      <span class="top-2 left-2 green worm"><i class="fa fa-square fa-spin"></i></span>
+
+      <span class="top-2 left-4 green" id="wormDest"><i class="fa fa-dot-circle-o"></i></span>
+    </div><br/><br/>
+
+
+    <p>Elements are not in grid</p>
+
+    <div class="board width-5 height-5">
+      <span class="top-0 left-2"><i class="fa fa-square"></i></span>
+      <span class="top-1 left-1-5"><i class="fa fa-square"></i></span>
+      <span class="top-1 left-2-5"><i class="fa fa-square"></i></span>
+      <span class="top-2 left-1"><i class="fa fa-square"></i></span>
+      <span class="top-2 left-2"><i class="fa fa-square"></i></span>
+      <span class="top-2 left-3"><i class="fa fa-square"></i></span>
+      <span class="top-3 left-0-5"><i class="fa fa-square"></i></span>
+      <span class="top-3 left-1-5"><i class="fa fa-square"></i></span>
+      <span class="top-3 left-2-5"><i class="fa fa-square"></i></span>
+      <span class="top-3 left-3-5"><i class="fa fa-square"></i></span>
+      <span class="top-4 left-0"><i class="fa fa-square"></i></span>
+      <span class="top-4 left-1"><i class="fa fa-square"></i></span>
+      <span class="top-4 left-2"><i class="fa fa-square"></i></span>
+      <span class="top-4 left-3"><i class="fa fa-square"></i></span>
+      <span class="top-4 left-4"><i class="fa fa-square"></i></span>
+    </div><br/><br/>
+
+
+    <h4>Html entities</h4>
+
+    <p>http://www.freeformatter.com/html-entities.html</p>
+
+    <div class="board width-5 height-3">
+      <span class="top-0 left-0"><i>&oplus;</i></span>
+      <span class="top-0 left-1"><i>&otimes;</i></span>
+
+      <span class="top-1 left-0"><i>&spades;</i></span>
+      <span class="top-1 left-1"><i>&clubs;</i></span>
+      <span class="top-1 left-2"><i>&hearts;</i></span>
+      <span class="top-1 left-3"><i>&diams;</i></span>
+
+      <span class="top-2 left-0"><i>&dagger;</i></span>
+     </div><br/><br/>
+
+     <p>You can apply color, opacity and animations as for usual font</p>
+     <div class="board width-5 height-3">
+      <span class="top-0 left-0 red"><i>&oplus;</i></span>
+      <span class="top-0 left-1 red"><i>&otimes;</i></span>
+
+      <span class="top-1 left-0 red"><i>&spades;</i></span>
+      <span class="top-1 left-1 red"><i>&clubs;</i></span>
+      <span class="top-1 left-2 red"><i>&hearts;</i></span>
+      <span class="top-1 left-3 red"><i>&diams;</i></span>
+
+      <span class="top-2 left-0 red"><i>&dagger;</i></span>
+    </div><br/><br/>
+
+    <div class="board width-5 height-3">
+      <span class="top-0 left-0 opacity-20"><i>&oplus;</i></span>
+      <span class="top-0 left-1 opacity-50"><i>&otimes;</i></span>
+
+      <span class="top-1 left-0 opacity-20"><i>&spades;</i></span>
+      <span class="top-1 left-1 opacity-50"><i>&clubs;</i></span>
+      <span class="top-1 left-2 opacity-20"><i>&hearts;</i></span>
+      <span class="top-1 left-3 opacity-20"><i>&diams;</i></span>
+
+      <span class="top-2 left-0 opacity-20"><i>&dagger;</i></span>
+    </div><br/><br/>
+
+     <div class="board width-5 height-3">
+      <span class="top-0 left-0"><i class="fa-spin">&oplus;</i></span>
+      <span class="top-0 left-1"><i class="fa-spin">&otimes;</i></span>
+
+      <span class="top-1 left-0"><i class="fa-spin">&spades;</i></span>
+      <span class="top-1 left-1"><i class="fa-spin">&clubs;</i></span>
+      <span class="top-1 left-2"><i class="fa-spin">&hearts;</i></span>
+      <span class="top-1 left-3"><i class="fa-spin">&diams;</i></span>
+
+      <span class="top-2 left-0"><i class="fa-spin">&dagger;</i></span>
+     </div><br/><br/>
+
+
+     <h4>Unicode</h4>
+      <p>https://en.wikipedia.org/wiki/List_of_Unicode_characters</p>
+
+      <div class="board width-5 height-4">
+          <span class="top-0 left-0"><i>&#x25FD;</i></span>
+          <span class="top-0 left-1"><i>&#x25FE;</i></span>
+          <span class="top-0 left-2"><i>&#x25FB;</i></span>
+
+          <span class="top-1 left-0"><i>&#x25EF;</i></span>
+          <span class="top-1 left-1"><i>&#x25E6;</i></span>
+          <span class="top-1 left-2"><i>&#x25C9;</i></span>
+
+          <span class="top-2 left-0"><i>&#x25A2;</i></span>
+          <span class="top-2 left-1"><i>&#x25A3;</i></span>
+          <span class="top-2 left-2"><i>&#x25A4;</i></span>
+          <span class="top-2 left-3"><i>&#x25A5;</i></span>
+          <span class="top-2 left-4"><i>&#x25A6;</i></span>
+
+          <span class="top-3 left-0"><i>&#x25A7;</i></span>
+          <span class="top-3 left-1"><i>&#x25A8;</i></span>
+          <span class="top-3 left-2"><i>&#x25A9;</i></span>
+        </div><br/><br/>
+
+      <p>You can apply color not to all symbols</p>
+      <div class="board width-5 height-4">
+        <span class="top-0 left-0 red"><i>&#x25FD;</i></span>
+        <span class="top-0 left-1 red"><i>&#x25FE;</i></span>
+        <span class="top-0 left-2 red"><i>&#x25FB;</i></span>
+
+        <span class="top-1 left-0 red"><i>&#x25EF;</i></span>
+        <span class="top-1 left-1 red"><i>&#x25E6;</i></span>
+        <span class="top-1 left-2 red"><i>&#x25C9;</i></span>
+
+        <span class="top-2 left-0 red"><i>&#x25A2;</i></span>
+        <span class="top-2 left-1 red"><i>&#x25A3;</i></span>
+        <span class="top-2 left-2 red"><i>&#x25A4;</i></span>
+        <span class="top-2 left-3 red"><i>&#x25A5;</i></span>
+        <span class="top-2 left-4 red"><i>&#x25A6;</i></span>
+
+        <span class="top-3 left-0 red"><i>&#x25A7;</i></span>
+        <span class="top-3 left-1 red"><i>&#x25A8;</i></span>
+        <span class="top-3 left-2 red"><i>&#x25A9;</i></span>
+      </div><br/><br/>
+
+      <p>You can apply opacity</p>
+      <div class="board width-5 height-4">
+        <span class="top-0 left-0 opacity-20"><i>&#x25FD;</i></span>
+        <span class="top-0 left-1 opacity-20"><i>&#x25FE;</i></span>
+        <span class="top-0 left-2 opacity-20"><i>&#x25FB;</i></span>
+
+        <span class="top-1 left-0 opacity-20"><i>&#x25EF;</i></span>
+        <span class="top-1 left-1 opacity-20"><i>&#x25E6;</i></span>
+        <span class="top-1 left-2 opacity-20"><i>&#x25C9;</i></span>
+
+        <span class="top-2 left-0 opacity-20"><i>&#x25A2;</i></span>
+        <span class="top-2 left-1 opacity-20"><i>&#x25A3;</i></span>
+        <span class="top-2 left-2 opacity-20"><i>&#x25A4;</i></span>
+        <span class="top-2 left-3 opacity-20"><i>&#x25A5;</i></span>
+        <span class="top-2 left-4 opacity-20"><i>&#x25A6;</i></span>
+
+        <span class="top-3 left-0 opacity-20"><i>&#x25A7;</i></span>
+        <span class="top-3 left-1 opacity-20"><i>&#x25A8;</i></span>
+        <span class="top-3 left-2 opacity-20"><i>&#x25A9;</i></span>
+      </div><br/><br/>
+
+      <p>Dunno why they are moving so</p>
+      <div class="board width-5 height-4">
+        <span class="top-0 left-0"><i class="fa-spin">&#x25FD;</i></span>
+        <span class="top-0 left-1"><i class="fa-spin">&#x25FE;</i></span>
+        <span class="top-0 left-2"><i class="fa-spin">&#x25FB;</i></span>
+
+        <span class="top-1 left-0"><i class="fa-spin">&#x25EF;</i></span>
+        <span class="top-1 left-1"><i class="fa-spin">&#x25E6;</i></span>
+        <span class="top-1 left-2"><i class="fa-spin">&#x25C9;</i></span>
+
+        <span class="top-2 left-0"><i class="fa-spin">&#x25A2;</i></span>
+        <span class="top-2 left-1"><i class="fa-spin">&#x25A3;</i></span>
+        <span class="top-2 left-2"><i class="fa-spin">&#x25A4;</i></span>
+        <span class="top-2 left-3"><i class="fa-spin">&#x25A5;</i></span>
+        <span class="top-2 left-4"><i class="fa-spin">&#x25A6;</i></span>
+
+        <span class="top-3 left-0"><i class="fa-spin">&#x25A7;</i></span>
+        <span class="top-3 left-1"><i class="fa-spin">&#x25A8;</i></span>
+        <span class="top-3 left-2"><i class="fa-spin">&#x25A9;</i></span>
+      </div><br/><br/>
+
+  </div>
+
+  <script src="public/app.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+  <script>
+    $("#wormDest").click(function() {
+      var $board = $(this).closest(".board");
+      var $wormElements = $board.find(".worm");
+      var step = $board.data("step");
+      $wormElements.each(function(index, value){
+        $(value).css({"left": $(value).position().left + step * 2});
+      });
+      $(this).css({opacity: 0});
+      setTimeout(function(){$(this).remove()}, 1000);
+    });
+  </script>
+</body>
+</html>

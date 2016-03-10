@@ -1,0 +1,20 @@
+# EXCLUDE EXACT
+/build/
+/ignore/
+/logs/
+/test*.js
+.tmp-globalize-webpack
+
+# EXCLUDE BY MASK
+.development
+.production
+.testing
+*.iml
+.idea
+.DS_Store
+node_modules
+npm-debug.log
+/public/*
+
+# INCLUDE EXACT
+!/public/errors/

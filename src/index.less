@@ -1,0 +1,112 @@
+// PAGE
+body {
+  background: #fff;
+  font-family: Calibri;
+  font-size: 20px;
+  padding: 50px;
+}
+.content {
+	max-width: 1000px;
+}
+div {
+  box-sizing: content-box;
+}
+
+
+
+// BOARD
+.grid(@gridStep, @gridBg, @gridBorderColor) {
+  background-color: @gridBg;
+  background-image: linear-gradient(@gridBorderColor 1px, transparent 1px),
+                    linear-gradient(90deg, @gridBorderColor 1px, transparent 1px);
+  background-size: @gridStep @gridStep;
+}
+
+.setup-board(@gridStep, @gridBg, @gridBorderColor) {
+  font-size: @gridStep * 0.9;
+  position: relative;
+
+  .grid(@gridStep, @gridBg, @gridBorderColor);
+
+  &.height-1 {height: @gridStep*1 + 1}
+  &.height-2 {height: @gridStep*2 + 1}
+  &.height-3 {height: @gridStep*3 + 1}
+  &.height-4 {height: @gridStep*4 + 1}
+  &.height-5 {height: @gridStep*5 + 1}
+
+  &.width-1 {width: @gridStep*1 + 1}
+  &.width-2 {width: @gridStep*2 + 1}
+  &.width-3 {width: @gridStep*3 + 1}
+  &.width-4 {width: @gridStep*4 + 1}
+  &.width-5 {width: @gridStep*5 + 1}
+
+  span {
+    position: absolute;
+    height: @gridStep;
+    width: @gridStep;
+    text-align: center;
+
+    transition: all 1s ease-in-out;
+
+    i {
+      font-style: normal;
+      display:inline-block;
+      line-height: @gridStep;
+      vertical-align: middle;
+    }
+
+    &.top-0 {top: @gridStep * 0;}
+    &.top-1 {top: @gridStep * 1;}
+    &.top-2 {top: @gridStep * 2;}
+    &.top-3 {top: @gridStep * 3;}
+    &.top-4 {top: @gridStep * 4;}
+
+    &.top-0-5 {top: @gridStep * 0.5;}
+    &.top-1-5 {top: @gridStep * 1.5;}
+    &.top-2-5 {top: @gridStep * 2.5;}
+    &.top-3-5 {top: @gridStep * 3.5;}
+
+    &.left-0 {left: @gridStep * 0;}
+    &.left-1 {left: @gridStep * 1;}
+    &.left-2 {left: @gridStep * 2;}
+    &.left-3 {left: @gridStep * 3;}
+    &.left-4 {left: @gridStep * 4;}
+
+    &.left-0-5 {left: @gridStep * 0.5;}
+    &.left-1-5 {left: @gridStep * 1.5;}
+    &.left-2-5 {left: @gridStep * 2.5;}
+    &.left-3-5 {left: @gridStep * 3.5;}
+
+    &.red {color: red;}
+    &.green {color: green;}
+
+    &.opacity-20 {opacity: 0.2;}
+    &.opacity-50 {opacity: 0.5;}
+  }
+}
+
+.board {
+  @gridBg: #fff;
+  @gridBorderColor: #000;
+  @gridStep: 25px;
+  border: 2px solid @gridBorderColor;
+  .setup-board(@gridStep, @gridBg, @gridBorderColor)
+}
+
+.board.big {
+  @gridBg: #fff;
+  @gridBorderColor: #000;
+  @gridStep: 100px;
+  border: 2px solid @gridBorderColor;
+  .setup-board(@gridStep, @gridBg, @gridBorderColor)
+}
+
+.board.sm {
+  @gridBg: #fff;
+  @gridBorderColor: #000;
+  @gridStep: 10px;
+  border: 2px solid @gridBorderColor;
+  .setup-board(@gridStep, @gridBg, @gridBorderColor)
+}
+
+
