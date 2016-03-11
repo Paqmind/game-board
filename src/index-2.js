@@ -1,0 +1,1 @@
+import "./index-2.less";

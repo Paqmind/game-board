@@ -7,7 +7,8 @@ const NODE_MODULES_DIR = Path.join(__dirname, "node_modules");
 
 module.exports = {
   entry: {
-    app: './src/index.js',
+    "index-1": './src/index-1.js',
+    "index-2": './src/index-2.js',
   },
   output: {
     path: PUBLIC_DIR,

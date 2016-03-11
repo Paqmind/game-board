@@ -1,0 +1,71 @@
+// PAGE
+body {
+  background: #fff;
+  font-family: Calibri;
+  font-size: 20px;
+  padding: 50px;
+}
+.content {
+	max-width: 1000px;
+}
+div {
+  box-sizing: content-box;
+}
+
+
+
+// BOARD
+.setup-board(@gridStep) {
+  font-size: @gridStep;
+  &.cols-1 {width: @gridStep*1}
+  &.cols-2 {width: @gridStep*2}
+  &.cols-3 {width: @gridStep*3}
+  &.cols-4 {width: @gridStep*4}
+  &.cols-5 {width: @gridStep*5}
+
+  &.rows-1 {height: @gridStep*1}
+  &.rows-2 {height: @gridStep*2}
+  &.rows-3 {height: @gridStep*3}
+  &.rows-4 {height: @gridStep*4}
+  &.rows-5 {height: @gridStep*5}
+
+  i {
+    float: left;
+    height: @gridStep;
+    width: @gridStep;
+    text-align: center;
+    &:before {
+      font-style: normal;
+      display:inline-block;
+      line-height: @gridStep;
+      vertical-align: middle;
+    }
+    &.red {color: red;}
+    &.green {color: green;}
+
+    &.opacity-20 {opacity: 0.2;}
+    &.opacity-50 {opacity: 0.5;}
+  }
+}
+
+.board {
+  @gridStep: 25px;
+  background: #fff;
+  border: 2px solid #000;
+  .setup-board(@gridStep);
+  &.big {
+    @gridStep: 100px;
+    .setup-board(@gridStep);
+  }
+  &.sm {
+    @gridStep: 10px;
+    .setup-board(@gridStep);
+  }
+}
+
+
+.icons.board {
+  .fa-square {
+    font-size: 1.1em; // you need experiment with that
+  }
+}
